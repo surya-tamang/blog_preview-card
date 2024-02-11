@@ -1,0 +1,104 @@
+@font-face {
+    font-family: myfont;
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: myfont;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--White);
+    height: 400px;
+    width: 300px;
+    border: 2px solid var(--Grey);
+    border-radius: 15px;
+    box-shadow: 8px 8px var(--Black);
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.date {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+h3 {
+    margin: 10px 0px;
+    background-color: var(--Yellow);
+    width: 93px;
+    padding: 5px 10px 5px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+p {
+    color: var(--Grey);
+}
+
+.profile {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 30px;
+}
+
+.profile h2 {
+    margin-left: 10px;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and(min-height:375px) {
+    .card {
+        width: 200px;
+    }
+}
